@@ -1,0 +1,46 @@
+{
+    "name": "job-email-classifier",
+    "version": "1.0.0",
+    "description": "A TypeScript service that monitors an IMAP inbox and classifies job application emails as interviews, rejections, or other.",
+    "type": "module",
+    "scripts": {
+        "start": "tsx --env-file=.env src/app.ts",
+        "typecheck": "tsc --noEmit"
+    },
+    "author": "Waulk",
+    "license": "GPL-3.0-or-later",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Waulk/job-email-classifier.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Waulk/job-email-classifier/issues"
+    },
+    "homepage": "https://github.com/Waulk/job-email-classifier#readme",
+    "keywords": [
+        "email",
+        "imap",
+        "job-search",
+        "email-classifier",
+        "typescript",
+        "openrouter",
+        "jev",
+        "openai"
+    ],
+    "engines": {
+        "node": ">=20.19.0"
+    },
+    "dependencies": {
+        "@openrouter/sdk": "^1.3.30",
+        "imapflow": "^2.0.6",
+        "mailparser": "^3.9.28",
+        "openai": "^7.23.0",
+        "zod": "^4.6.5"
+    },
+    "devDependencies": {
+        "@types/mailparser": "^3.4.6",
+        "@types/node": "^20.19.43",
+        "tsx": "^4.23.15",
+        "typescript": "^7.0.2"
+    }
+}
